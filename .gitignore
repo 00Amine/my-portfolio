@@ -1,0 +1,7 @@
+# Presentation and internal files
+*.pptx
+*.docx
+*.xlsx
+*.tmp
+.DS_Store
+Thumbs.db

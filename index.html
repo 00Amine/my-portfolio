@@ -1,193 +1,569 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Jane Doe - Portfolio</title>
-    <link rel="stylesheet" href="./style.css"/>
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <!-- Navigation Bar -->
-    <nav>
-      <div id="home">
-        <div class="profile_name">
-          Mohamed Amine Nourdine
-          <div class="contact_info">
-            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
-          jdoe@jeemail.com
-        </div>
-        <div style="clear:both;"></div>
-        <div class="contact_info">
-          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
-          +13456764598
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohamed Amine Nourdine — BI & ERP Consultant</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
 
-        </div>
-        </div>
-        <div class="topdiv">
-          <a class="topmenu" href="#about-me">About Me</a>
-          <a class="topmenu" href="#Skills" >Skills </a>
-          <a class="topmenu" href="#Projects" >Projects </a>
-          <a class="topmenu" href="#Recommendations">Recommendations </a>
-        </div>
-      </div>    
-    </nav>
+  <!-- ===================== NAVBAR ===================== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand">
+        <img src="picture.jpg" alt="Mohamed Amine" class="nav-avatar" />
+        <span class="nav-name">Mohamed Amine</span>
+      </a>
 
-    <!-- About Me -->
-    <section id="about-me" class="container">
-      <div>
-        <img src="picture.JPEG" class="profile_image"/>
+      <div class="nav-right">
+        <div class="nav-links" id="nav-links">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle color theme" title="Toggle theme">
+          <i data-lucide="moon" id="theme-icon"></i>
+        </button>
+
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="hero">
+    <div class="hero-container">
+      <div class="hero-text">
+        <div class="hero-status">
+          <span class="status-dot"></span>
+          <span>Available for Consultant Roles</span>
+        </div>
+
+        <h1 class="hero-name">Mohamed Amine Nourdine</h1>
+        <p class="hero-title">BI & ERP Consultant Engineer</p>
+        <p class="hero-desc">
+          State Engineer in IS Management & Governance (ENSAO). I bridge business strategy 
+          and enterprise technology — translating complex operational workflows into intuitive 
+          Power BI decision engines and tailored ERP systems with SAP, Odoo, and Salesforce.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">Get In Touch</a>
+          <a href="CV_Mohamed_Amine_Nourdine_BI_ERP.pdf" class="btn btn-outline" download>Download CV</a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="mailto:mohamedaminenourdine03@gmail.com" class="email-trigger" aria-label="Email" title="Email: mohamedaminenourdine03@gmail.com"><i data-lucide="mail"></i></a>
+          <a href="https://www.linkedin.com/in/mohamed-amine-nourdine" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn Profile">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect width="4" height="12" x="2" y="9"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </a>
+          <a href="https://github.com/00Amine" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub Profile">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+              <path d="M9 18c-4.51 2-5-2-7-2"/>
+            </svg>
+          </a>
+          <a href="tel:+212625528331" class="phone-trigger" aria-label="Phone" title="Phone: +212 6 25 52 83 31"><i data-lucide="phone"></i></a>
+        </div>
       </div>
 
-      <div>
-          <h1>
-            Hi, I'm Nourdine Mohamed Amine! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
-          </h1>
+      <div class="hero-image">
+        <div class="hero-image-wrapper">
+          <img src="picture.jpg" alt="Mohamed Amine Nourdine" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" class="section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-kicker">Background</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
           <p>
-            I am a passionate learner with a focus on HTML, CSS,
-            and JavaScript. Always eager to explore new technologies and improve
-            my skills.
+            I am a <strong>State Engineer in Information Systems Management & Governance</strong> from ENSA Oujda. 
+            My approach blends business acumen with rigorous technical execution — helping companies make confident, 
+            data-driven decisions while optimizing their core operational workflows.
           </p>
-      </div>
-    </section>
-              
-    <!-- Skills -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <div style="clear:both;"></div>
+          <p>
+            My background covers end-to-end <strong>Business Intelligence</strong> (dimensional modeling in constellation/star 
+            schemas, native Power Query ETL pipelines, complex DAX formulas), <strong>enterprise ERP systems</strong> (SAP PM/MM, 
+            custom Odoo 19 module engineering, Salesforce administration), and <strong>applied software development</strong> 
+            (Python, SQL, web technologies, and machine learning).
+          </p>
+          <p>
+            Whether revamping maintenance reporting in high-capacity industrial plants or architecting inventory modules from scratch, 
+            I focus on building clear, scalable, and human-centered solutions.
+          </p>
+        </div>
 
-      <div class="all_skills">
-        <div class="skill">
-          <img src="html_finalprojimages/html5.png"/>
-          <h6>HTML</h6>
-          <p>2 years experience</p>
-        </div>  
-
-        <div class="skill">
-          <img src="html_finalprojimages/js.jpeg"/>
-          <h6>JavaScript</h6>
-          <p>3 years experience</p>
-        </div>  
-
-        <div class="skill">
-          <img src="java.png"/>
-          <h6>Java</h6>
-          <p>4 years experience</p>
-        </div>  
-
-        <div class="skill">
-          <img src="react.png"/>
-          <h6>React</h6>
-          <p>4 years experience</p>
-        </div>  
-
-        <div class="skill">
-          <img src="CSS3.png"/>
-          <h6>CSS</h6>
-          <p>4 years experience</p>
-        </div>  
-
-        <div class="skill">
-          <img src="cslogo.jpg"/>
-          <h6>Cyber Security</h6>
-          <p>0.5 years experience</p>
-        </div>  
-
-
-      </div>
-    </section>
-          
-    <!-- Projects -->
-    <section class="projects" id="projects">
-      <h2>
-        Projects
-      </h2>
-      <div style="clear:both;"></div>
-
-        <div id="projects-container" class="projects-container">
-          <div class="project-card">
-            <h3>Online Portfolio Website</h3>
-            <ul>
-              <li>A personal website showcasing your projects,
-                skills, and experiences. This will serve as a digital resume and a platform
-                 to demonstrate abilities to potential employers or clients.</li>
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-count="150">0</span><span class="stat-plus">+</span>
+            </div>
+            <span class="stat-label">KPIs Designed</span>
           </div>
-          <hr>
-          <div class="project-card">
-            <h3>E-commerce Store Development</h3>
+
+          <div class="stat-card">
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-count="3">0</span>
+            </div>
+            <span class="stat-label">Professional Internships</span>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-count="7">0</span><span class="stat-plus">+</span>
+            </div>
+            <span class="stat-label">Verified Certifications</span>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-count="3">0</span>
+            </div>
+            <span class="stat-label">Languages Spoken</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <section id="experience" class="section section-alt">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-kicker">Career Path</span>
+        <h2 class="section-title">Professional Experience</h2>
+      </div>
+
+      <div class="timeline">
+
+        <!-- OCP Internship -->
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-role">BI Consultant & Decision Support Modeling — PFE Internship</h3>
+              <p class="timeline-meta"><i data-lucide="building-2"></i> OCP Group — Laverie de Youssoufia</p>
+            </div>
+            <span class="timeline-badge">Feb — May 2026</span>
+          </div>
+
+          <div class="timeline-content">
             <ul>
-              <li>An e-commerce website from scratch like Shopify or WooCommerce. This project allow
-                to gain experience in frontend and backend development, payment gateways, 
-                and user experience design.</li>
+              <li><strong>Context & Single Source of Truth:</strong> Modernized and centralized operational data across industrial washing and phosphate enrichment units, replacing fragmented Excel/PPT reports with an autonomous BI architecture connected to SAP S/4HANA.</li>
+              <li><strong>Hybrid Engineering Methodology:</strong> Applied <strong>GIMSI</strong> for strategic KPI-to-business alignment, <strong>Kimball</strong> dimensional modeling (constellation schema with parent-child technical hierarchies), and <strong>Scrum</strong> across iterative sprints delivering validated Data Marts.</li>
+              <li><strong>Automated In-Memory ETL (Power Query):</strong> Designed extraction pipelines ingesting SAP PM (<code>IW39</code>), SAP MM (<code>MB51</code>), and custom <code>Z_RAPPORT_STOCK</code>, automating cleansing, operational nomenclature mapping, and in-memory loading.</li>
+              <li><strong>4 Decision Domains & Cockpits:</strong> Deployed interactive dashboards covering Maintenance Reliability (Pareto, MTBF/MTTR), Production Yield (commercial tonnage, moisture rates), Spare Parts Inventory, and Cost Centers (corrective vs. preventive work orders).</li>
+              <li><strong>What-If Revamping Financial Simulator:</strong> Built an algorithmic decision engine with 4 interactive parameters (Capex, Opex savings, horizon, availability gain), modeling instant ROI, Payback periods, cost crossover curves, and 4-tier recommendation logic for critical equipment.</li>
+              <li><strong>Prescriptive Governance & Recommendations:</strong> Conducted root-cause analysis distinguishing operational flow bottlenecks from equipment reliability, evaluated dormant spare parts inventory, and formulated strategic actionable recommendations adopted by plant leadership.</li>
             </ul>
+
+            <div class="timeline-tags">
+              <span>Power BI</span>
+              <span>DAX</span>
+              <span>Power Query (ETL)</span>
+              <span>SAP S/4HANA</span>
+              <span>Kimball Constellation</span>
+              <span>What-If Modeling</span>
+              <span>GIMSI</span>
+              <span>Maintenance 4.0</span>
+            </div>
           </div>
-          <hr>
-          <div class="project-card">
-            <h3>Mobile App Development for Task Management</h3>
+        </div>
+
+        <!-- ONEE Internship -->
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-role">Data Cleansing & ERP Integration (SAP) — PFA Internship</h3>
+              <p class="timeline-meta"><i data-lucide="building-2"></i> ONEE-BE, Casablanca</p>
+            </div>
+            <span class="timeline-badge">Jul — Aug 2025</span>
+          </div>
+
+          <div class="timeline-content">
             <ul>
-              <li>A mobile app that helps
-                users manage their tasks, schedules, and to-do lists efficiently. This 
-                project involve frontend development for both Android and iOS 
-                platforms, backend server setup for data storage and synchronization,
-                and user interface design for a seamless user experience.</li>
+              <li>Reconciliation and <strong>data cleansing</strong> using VBA scripts and SQL queries to ensure data integrity before large-scale profile migration to SAP.</li>
+              <li>In-depth analysis of article management and maintenance modules, analyzing transactional flows to isolate discrepancies and guarantee data reliability.</li>
             </ul>
-          </div>
-    </div>
-    </section>
-    <div style="clear:both;"></div>
 
-    <!-- Recommendations -->
-    <section id="recommendations">
-      <h2>Recommendations</h2>
-      <div style="clear:both;"></div>
-      <div class="all_recommendations" id="all_recommendations">
-        <div class="recommendation">
-          <span>&#8220;</span>
-          For a thrilling read, dive into 'Echoes of Eternity' by Aria Nightingale.
-           With its gripping plot twists and vivid characters, it's a journey you 
-           won't soon forget.
-          <span>&#8221;</span>
+            <div class="timeline-tags">
+              <span>SAP</span>
+              <span>SQL</span>
+              <span>VBA</span>
+              <span>Data Cleansing</span>
+              <span>Process Audit</span>
+            </div>
+          </div>
         </div>
-        <div class="recommendation">
-          <span>&#8220;</span>
-          Indulge your taste buds with Chef Franco's latest culinary masterpiece, 
-          'Saffron Symphony.' Each dish is a harmonious blend of flavors that will 
-          transport you to gastronomic paradise.
-          <span>&#8221;</span>
+
+        <!-- ONDA Internship -->
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-role">Process Optimization — Introductory Internship</h3>
+              <p class="timeline-meta"><i data-lucide="building-2"></i> ONDA, Marrakech</p>
+            </div>
+            <span class="timeline-badge">Aug 2024</span>
+          </div>
+
+          <div class="timeline-content">
+            <ul>
+              <li>Developed internal web solutions to <strong>optimize and digitize</strong> reservation processes, streamlining internal communication and administrative workflows.</li>
+            </ul>
+
+            <div class="timeline-tags">
+              <span>Web Development</span>
+              <span>Process Optimization</span>
+              <span>Workflow Automation</span>
+            </div>
+          </div>
         </div>
-        <div class="recommendation">
-          <span>&#8220;</span>
-          Get lost in the mesmerizing melodies of 'Lunar Serenade' by the ethereal 
-          songstress, Lyra Moon. Her celestial voice will enchant your soul and carry
-          you to celestial realms.
-          <span>&#8221;</span>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section id="skills" class="section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-kicker">Expertise</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <div class="skill-category-icon"><i data-lucide="database"></i></div>
+            <h3>ERP & CRM Systems</h3>
+          </div>
+          <div class="skill-tags">
+            <span>SAP (PM / MM)</span>
+            <span>Odoo (Custom Modules)</span>
+            <span>Salesforce (Admin / Apex / Flows)</span>
+            <span>Python</span>
+            <span>XML</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <div class="skill-category-icon"><i data-lucide="bar-chart-3"></i></div>
+            <h3>Business Intelligence & Data</h3>
+          </div>
+          <div class="skill-tags">
+            <span>Power BI</span>
+            <span>DAX</span>
+            <span>Power Query (ETL)</span>
+            <span>Star / Snowflake Modeling</span>
+            <span>SQL (PostgreSQL, MySQL, MariaDB)</span>
+            <span>Excel (VBA Macros)</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <div class="skill-category-icon"><i data-lucide="code-2"></i></div>
+            <h3>Development & Machine Learning</h3>
+          </div>
+          <div class="skill-tags">
+            <span>Python (Pandas, Flask, Streamlit)</span>
+            <span>JavaScript</span>
+            <span>HTML / CSS</span>
+            <span>Machine Learning (YOLOv8)</span>
+            <span>Git / GitHub</span>
+            <span>Linux</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <div class="skill-category-icon"><i data-lucide="globe"></i></div>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-tags">
+            <span>Arabic — Native</span>
+            <span>French — Fluent</span>
+            <span>English — Professional (B2)</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section id="projects" class="section section-alt">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-kicker">Portfolio</span>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: OCP -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-icon-badge"><i data-lucide="bar-chart-2"></i></div>
+          </div>
+          <h3>OCP BI Suite & What-If Simulator</h3>
+          <p>
+            End-to-end industrial BI and decision-support solution for OCP Group: constellation dimensional schema (6 fact tables, 5 dimensions), automated Power Query ETL from SAP S/4HANA (IW39/MB51), 150+ DAX measures, and an interactive What-If financial revamping simulator modeling dynamic ROI and payback curves.
+          </p>
+          <div class="project-tags">
+            <span>Power BI</span><span>DAX</span><span>Power Query</span><span>SAP S/4HANA</span><span>Kimball</span><span>What-If Simulation</span>
+          </div>
+        </div>
+
+        <!-- Project 2: Odoo -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-icon-badge"><i data-lucide="layers"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/00Amine/stock_inventory_odoo19" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository" title="View repository on GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+                  <path d="M9 18c-4.51 2-5-2-7-2"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3>Custom Inventory Module — Odoo 19</h3>
+          <p>
+            Full-stack custom inventory management module: Python backend for real-time stock calculations, XML view configurations for movement tracking, location assignment, supplier management, and automated PDF report generation.
+          </p>
+          <div class="project-tags">
+            <span>Odoo 19</span><span>Python</span><span>XML</span><span>ERP Development</span>
+          </div>
+        </div>
+
+        <!-- Project 3: YOLO -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-icon-badge"><i data-lucide="cpu"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/00Amine/D-tection-et-Segmentation-d-Objets-sur-Mobile-Impl-mentation-et-Optimisation-avec-Flutter-Dart-" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository" title="View repository on GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+                  <path d="M9 18c-4.51 2-5-2-7-2"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3>Motorbike Safety Detection — YOLOv8</h3>
+          <p>
+            Computer vision system for road safety: dataset preparation and cleansing via Python scripts, training of an optimized YOLOv8n model for helmet and license plate detection, and deployment on mobile using Flutter and Dart.
+          </p>
+          <div class="project-tags">
+            <span>YOLOv8</span><span>Python</span><span>Computer Vision</span><span>Flutter</span>
+          </div>
+        </div>
+
+        <!-- Project 4: SAP -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-icon-badge"><i data-lucide="check-circle-2"></i></div>
+          </div>
+          <h3>SAP Data Migration — ONEE</h3>
+          <p>
+            Data reconciliation and quality pipeline using custom VBA scripts and SQL queries to guarantee data integrity during a major profile migration to SAP. Transactional flow audit for anomaly detection.
+          </p>
+          <div class="project-tags">
+            <span>SAP</span><span>SQL</span><span>VBA</span><span>Data Quality</span><span>Data Migration</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EDUCATION & CERTS ===================== -->
+  <section id="education" class="section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-kicker">Academic & Credentials</span>
+        <h2 class="section-title">Education & Certifications</h2>
+      </div>
+
+      <div class="edu-grid">
+        <div class="edu-main">
+          <div class="edu-card">
+            <div class="edu-icon"><i data-lucide="graduation-cap"></i></div>
+            <div>
+              <h3>State Engineer Diploma — IS Management & Governance</h3>
+              <p class="edu-school">ENSA Oujda · 2021 — 2026</p>
+              <p class="edu-detail">
+                <strong>Key courses:</strong> Business Intelligence, ERP (Odoo) / CRM (Salesforce), Database Architecture & Administration, Machine Learning, Web Development, Digital Transformation, Logistics Management, IS Security, Business Law, Digital Marketing.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-certs">
+          <h3 class="certs-heading">Verified Certifications</h3>
+          <div class="cert-list">
+            <a href="https://www.salesforce.com/trailblazer/e4bhfksilwq1xtz6fp" target="_blank" rel="noopener noreferrer" class="cert-item">
+              <i data-lucide="award"></i>
+              <div>
+                <strong>Salesforce Trailhead Adventurer</strong>
+                <p>14 Badges · 11,200 Points</p>
+              </div>
+            </a>
+            <a href="https://coursera.org/share/e30582caa1aca572f313bc67386677f5" target="_blank" rel="noopener noreferrer" class="cert-item">
+              <i data-lucide="award"></i>
+              <div>
+                <strong>Extract, Transform and Load Data in Power BI</strong>
+                <p>Coursera Credential</p>
+              </div>
+            </a>
+            <a href="https://coursera.org/share/356d912820e7fed8a55a2b987014b721" target="_blank" rel="noopener noreferrer" class="cert-item">
+              <i data-lucide="award"></i>
+              <div>
+                <strong>IT Security</strong>
+                <p>Google — Coursera Credential</p>
+              </div>
+            </a>
+            <a href="https://coursera.org/share/28b274c3fd86ed14d7bb4b578c8948d8" target="_blank" rel="noopener noreferrer" class="cert-item">
+              <i data-lucide="award"></i>
+              <div>
+                <strong>Mastering Framework Laravel</strong>
+                <p>Coursera Credential</p>
+              </div>
+            </a>
+            <a href="https://coursera.org/share/5cfd7519edb3fdbb3a144c345af1745d" target="_blank" rel="noopener noreferrer" class="cert-item">
+              <i data-lucide="award"></i>
+              <div>
+                <strong>Web Development (HTML/CSS/JS)</strong>
+                <p>Coursera Credential</p>
+              </div>
+            </a>
+            <a href="https://coursera.org/share/ad17b503c2f37e0b11d374826fd8a52d" target="_blank" rel="noopener noreferrer" class="cert-item">
+              <i data-lucide="award"></i>
+              <div>
+                <strong>JavaScript for Web Development</strong>
+                <p>Coursera Credential</p>
+              </div>
+            </a>
+            <a href="https://coursera.org/share/e01d6855e87e2e5cb11e8ddae1e5ff43" target="_blank" rel="noopener noreferrer" class="cert-item">
+              <i data-lucide="award"></i>
+              <div>
+                <strong>Build a Webpage with HTML and CSS</strong>
+                <p>Coursera Credential</p>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Recommendation Form -->
-    <section id="contact">
-      <div class="flex_center">
-        <fieldset>
-          <legend class="introduction">Leave a Recommendation</legend>          
-          <input type="text" placeholder="Name (Optional)"> <br/>
-          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
-          <div class="flex_center">
-            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
-          </div>
-        </fieldset>
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact" class="section section-alt">
+    <div class="section-container">
+      <div class="contact-wrapper">
+        <div class="section-header" style="margin-bottom: 1.5rem;">
+          <span class="section-kicker">Get In Touch</span>
+          <h2 class="section-title">Let's Connect</h2>
+        </div>
+
+        <p class="contact-intro">
+          I am currently open to opportunities as a <strong>BI Consultant</strong> or <strong>ERP Consultant</strong> 
+          (Technical / Functional). Whether discussing a project, an opening, or enterprise systems, feel free to reach out.
+        </p>
+
+        <div class="contact-cards">
+          <a href="mailto:mohamedaminenourdine03@gmail.com" class="contact-card email-trigger" title="Click to copy or compose email">
+            <i data-lucide="mail"></i>
+            <span>mohamedaminenourdine03@gmail.com</span>
+          </a>
+          <a href="tel:+212625528331" class="contact-card phone-trigger" title="Click to call or copy phone">
+            <i data-lucide="phone"></i>
+            <span>+212 6 25 52 83 31</span>
+          </a>
+          <a href="https://www.linkedin.com/in/mohamed-amine-nourdine" target="_blank" rel="noopener noreferrer" class="contact-card" title="Open LinkedIn Profile">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect width="4" height="12" x="2" y="9"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+            <span>LinkedIn Profile</span>
+          </a>
+          <a href="https://github.com/00Amine" target="_blank" rel="noopener noreferrer" class="contact-card" title="Open GitHub Profile">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+              <path d="M9 18c-4.51 2-5-2-7-2"/>
+            </svg>
+            <span>GitHub (@00Amine)</span>
+          </a>
+        </div>
+
+        <div class="contact-location">
+          <i data-lucide="map-pin"></i> Marrakech, Morocco
+        </div>
       </div>
-    </section>
-
-    <div class="iconbutton">
-      <a href="#home">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>      </a>
     </div>
+  </section>
 
-    <div class="popup" id="popup" class="flex_center">
-      <img src="html_finalprojimages/checkmark--outline.svg"/>
-      <h3>Thanks for leaving a recommendation</h3>
-      <button onclick="showPopup(false)">Ok</button>
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <p>© 2026 <strong>Mohamed Amine Nourdine</strong> · State Engineer in IS Management & Governance</p>
+  </footer>
+
+  <!-- Back to top -->
+  <a href="#hero" class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i data-lucide="arrow-up"></i>
+  </a>
+
+  <!-- Interactive Toast Notification -->
+  <div class="toast-container" id="toast-notification">
+    <div class="toast-header">
+      <div class="toast-title-group">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 6 9 17l-5-5"/>
+        </svg>
+        <span id="toast-title">Copied to Clipboard</span>
+      </div>
+      <button class="toast-close" id="toast-close" aria-label="Close notification">✕</button>
     </div>
-  </body>
+    <div class="toast-body" id="toast-body">
+      mohamedaminenourdine03@gmail.com
+    </div>
+    <div class="toast-actions" id="toast-actions">
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mohamedaminenourdine03@gmail.com" target="_blank" rel="noopener noreferrer" class="toast-btn toast-btn-primary" id="toast-gmail">
+        Open in Gmail
+      </a>
+      <a href="mailto:mohamedaminenourdine03@gmail.com" class="toast-btn toast-btn-outline" id="toast-mailapp">
+        Open Mail App
+      </a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
